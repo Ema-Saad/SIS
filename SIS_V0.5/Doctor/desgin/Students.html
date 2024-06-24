@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add or Delete Course</title>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url('images/cover.jpg') ; background-size: 100vw 100vh;">
+<header class="header">
+   <section class="flex">
+      <span class="Title-name">Welcome to EGYPT-JAPAN University For Science and Technology</span>
+      <div class="icons">
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+      <div class="profile">
+         <img src="images/admin-icon.png" class="image" alt="">
+         <h3 class="name">Mostafa Omar</h3>
+         <p class="role">Doctor</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">logout</a>
+         </div>
+      </div>
+   </section>
+</header>   
+<div class="side-bar">
+   <div class="logo-details">
+      <div id="menu-btn" class="bx bx-menu"></div>
+   </div>
+   <div><span class="logo-name">EJUST</span></div>
+   <ul>
+      <nav class="navbar">
+         <li><a href="home.html"><i class="fas fa-home"></i><span class="Names">Home</span></a></li>
+         <li><a href="callender.html"><i class="fas fa-chalkboard-teacher"></i><span class="Names">Callender</span></a></li>
+         <li><a href="add and delete course.html"><i class="fas fa-book"></i><span class="Names">Register/Drop</span></a></li>   
+         <li><a href="withdraw.html"><i class="fas fa-minus-circle"></i><span class="Names">Withdraw</span></a></li> 
+         <li><a href="report.html"><i class="fas fa-file-alt"></i><span class="Names">Report</span></a> </li>
+         <li><a href="Attendance.html"style="background-color:#246997;"><i class="fas fa-users"></i><span class="Names">Attendance</span></a></li>     
+      </nav>
+   </ul>
+</div>
+
+<h1 class="attendance-heading">Students Attendance</h1>
+<table class="attendance-table">
+   <thead>
+      <tr>
+         <th>Student ID</th>
+         <th>Student Name</th>
+         <th>Attendance</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr>
+        <td>32021001</td>
+        <td>Ali Mohamed</td>
+        <td><input type="checkbox" class="attendance-checkbox"></td>
+     </tr>
+     <tr>
+       <td>32021002</td>
+       <td>Mohamed Farid</td>
+       <td><input type="checkbox" class="attendance-checkbox"></td>
+    </tr>
+    <tr>
+       <td>32021003</td>
+       <td>Mostafa Fathy</td>
+       <td><input type="checkbox" class="attendance-checkbox"></td>
+    </tr>
+      <tr>
+        <td>32021004</td>
+        <td>Mazen Mohamed</td>
+        <td><input type="checkbox" class="attendance-checkbox"></td>
+     </tr>
+   </tbody>
+</table>
+<button class="Approve-button" onclick="approveAttendance()">Approve</button>
+<button class="Cancel-button" onclick="cancelAttendance()">Cancel</button>
+<br></br>
+<div class="file-upload-container">
+   <p class="Upload-txt">Upload Excel Sheet:</p>
+   <input type="file" accept=".xlsx, .xls" class="excel-upload" id="excelFile" name="excelFile">
+   <button class="Upload-button" onclick="uploadExcel()">Upload</button>
+</div>
+
+
+
+
+
+
+<script>
+   function approveAttendance() {
+   }
+
+   function cancelAttendance() {
+   }
+</script>
+
+</div>
+</body>
+</html>

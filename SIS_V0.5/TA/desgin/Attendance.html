@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Attendance</title>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url('images/cover.jpg') ; background-size: 100vw 100vh;">
+<header class="header">
+   <section class="flex">
+      <span class="Title-name">Welcome to EGYPT-JAPAN Unversity For Science and Technology</span>
+      </form>
+      <div class="icons">
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+      <div class="profile">
+         <img src="images/admin-icon.png" class="image" alt="">
+         <h3 class="name">Ali Mohamed</h3>
+         <p class="role">TA</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">logout</a>
+         </div>
+      </div>
+   </section>
+</header>   
+<div class="side-bar">
+   <div class="logo-details">
+      <div id="menu-btn" class="bx bx-menu"></div>
+   </div>
+   <div><span class="logo-name">EJUST</span></div>
+   <ul>
+    <nav class="navbar">
+       <li><a href="home.html"><i class="fas fa-home"></i><span class="Names">Home</span></a></li>
+       <li><a href="callender.html"><i class="fas fa-chalkboard-teacher"></i><span class="Names">Callender</span></a></li>
+       <li><a href="report.html"><i class="fas fa-file-alt"></i><span class="Names">Report</span></a> </li>
+       <li><a href="Attendance.html"style="background-color:#246997;"><i class="fas fa-users"></i><span class="Names">Attendance</span></a></li>
+    </nav>
+</ul>
+</div>
+</div>
+<div style="border: 2px solid rgb(255, 255, 255); width: 97%; height: 300px; margin-top: 0; margin-left: 2%;">
+   <h1 style="font-size: 24px;">Attendance</h1>
+   <form id="AttendanceForm"></form>
+       
+   <label for="Course Code" style="font-size: 18px; font-weight: bold; display: inline-block; width: 150px;">Course Code:</label>
+   <select id="CourseCode" name="CourseCode" style="font-size: 18px;">
+       <option value="CSC 321">CSC 321</option>
+       <option value="CSC 322">CSC 322</option>
+       <option value="CSC 323">CSC 323</option>
+       <option value="CSC 324">CSC 324</option>
+       <option value="CSC 425">CSC 425</option>
+       <option value="AID 426">AID 426</option>
+   </select><br><br>
+
+    <label for="AttendanceType" style="font-size: 18px; font-weight: bold; display: inline-block; width: 150px;">AttendanceType:</label>
+    <select id="AttendanceType" name="AttendanceType" style="font-size: 18px;">
+        <option value="LAB">LAB</option>
+        <option value="Tutorial">Tutorial</option>
+    </select><br><br>
+
+
+    <label for="Date" style="font-size: 18px; font-weight: bold; display: inline-block; width: 150px;">Date:</label>
+    <input type="date" id="Date" name="Date" style="font-size: 18px;"><br><br>
+    
+    <script>
+      var today = new Date().toISOString().split('T')[0];
+      document.getElementById('Date').value = today;
+    </script>
+    
+
+    
+    <label for="Section" style="font-size: 18px; font-weight: bold; display: inline-block; width: 150px;">Section:</label>
+    <select id="Section" name="Section" style="font-size: 18px;">
+        <option value="9:00 - 9:45">9:00 - 9:45</option>
+        <option value="9:45 - 10:30">9:45 - 10:30</option>
+        <option value="10:45 - 11:30">10:45 - 11:30</option>
+        <option value="11:30 - 12:1">11:30 - 12:15</option>
+        <option value="12:30 - 1:15">12:30 - 1:15</option>
+        <option value="1:15 - 2:00">1:15 - 2:00</option>
+        <option value="2:15 - 3:00">2:15 - 3:00</option>
+        <option value="3:00 - 3:45">3:00 - 3:45</option>
+    </select><br><br>
+
+
+    <a href="Students.html" style="text-decoration: none;">
+        <button type="continue" style="font-size: 18px; width: 400px;" class="Attendance-btn">Confirm</button>
+     </a>     
+   </form>
+</div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
